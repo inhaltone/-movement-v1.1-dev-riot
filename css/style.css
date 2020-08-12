@@ -1,0 +1,236 @@
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+    margin-top:0;
+  }
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+  }
+  
+  
+  @keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+  body{
+    background-color: ivory;
+  }
+ 
+  .dark-mode{
+    background:black !important;
+    color:white !important;
+  }
+  img{
+    width:100%;
+    height:auto;
+  }
+  .logo{
+    width: 150px;
+  }
+  .navbar-main{
+    background-color: #6e32ff;
+    color:white;
+  }
+  .navbar-nav > li > a {
+    color:white !important;
+    text-transform: uppercase;
+    margin-right:15px;
+    font-size:12px;
+  }
+  span.sub-logo{
+    font-size:12px;
+    color:white;
+    vertical-align: bottom;
+    line-height: 1;
+  }
+  .logo-module{
+    margin-right:5%;
+    padding:0 !important;
+    margin-left: 23px;
+  }
+.player-module{
+  width:100vw;
+  height:30px;
+}
+.player-module > img{
+  width: 30px;
+  left:0;
+  position: absolute;
+  top:0;
+}
+ img.player-button{
+   width:30px;
+   height: auto;
+ }
+ .player-1{
+padding:1rem; 
+}
+.player-info{
+  font-size:14px;
+  color:white ;
+}
+.nav-link > img {
+  width:20px;
+}
+.green-module{
+  background-color: greenyellow;
+}
+.geo-tag{
+  padding-top: .5rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-bottom:.5rem;
+  transition: all ease .2s;
+}
+.date-tag{
+  color:gray;
+  transition: all ease .2s;
+ 
+  font-size: 18px;
+}
+.artist-tag{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top:0;
+  transition: all ease .2s;
+
+}
+.podcast-description{
+ 
+}
+.podcast-link-container{
+  padding-bottom:3rem;
+  transition: all ease .2s;
+}
+.podcast-genres > a{
+  color:black !important;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.podcast-genre{
+  margin-right:.5rem;
+  margin-left:.5rem;
+
+}
+a.podcast-link > .geo-tag{
+  color:black;
+  text-decoration: none !important;
+
+}
+a.podcast-link > div > .artist-tag{
+  color:black;
+  text-decoration: none !important;
+
+}
+a.podcast-link{
+  display: block;
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  transition: all ease .2s;
+  
+}
+a.podcast-link:hover{
+background-color: #6e32ff;
+-webkit-box-shadow: 15px 18px 55px -7px rgba(0,0,0,0.45);
+-moz-box-shadow: 15px 18px 55px -7px rgba(0,0,0,0.45);
+box-shadow: 15px 18px 55px -7px rgba(0,0,0,0.45);
+text-decoration: none !important;
+
+}  
+a.genre-link{
+  display: block;
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  transition: all ease .2s;
+}
+a.genre-link:hover{
+  background-color: #6e32ff;
+  -webkit-box-shadow: 15px 18px 55px -7px rgba(0,0,0,0.45);
+  -moz-box-shadow: 15px 18px 55px -7px rgba(0,0,0,0.45);
+  box-shadow: 15px 18px 55px -7px rgba(0,0,0,0.45);
+  text-decoration: none !important;
+  
+  }  
+  a.genre-link:hover > div{
+    color:white;
+    text-decoration: none !important;
+   
+   
+     }  
+a.podcast-link:hover > div {
+ color:white;
+ text-decoration: none !important;
+ padding-left:15px;
+
+  }  
+
+  a.podcast-link:hover > div >div {
+    color:white;
+
+   
+     }  
+
+  .podcast-img-container {
+    position: relative;
+    
+}
+.podcast-img-container:hover > .overlay-bg {
+  opacity:0.6;
+}
+.podcast-img-container:hover > .overlay-ui {
+  opacity:1;
+}
+  .overlay-ui{
+    opacity:0;
+    position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%)translateY(-50%);
+  transition: all ease .2s;
+
+
+  
+  }
+  .overlay-bg{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    background-color: #000;
+    -webkit-box-shadow: 15px 18px 55px -7px rgba(0,0,0,0.45);
+    -moz-box-shadow: 15px 18px 55px -7px rgba(0,0,0,0.45);
+    box-shadow: 15px 18px 55px -7px rgba(0,0,0,0.45);
+    opacity:0;
+    transition: all ease .2s;
+    cursor: pointer;
+    
+  }
+
+  .index-section{
+    margin-top:25vh;
+  }
+  .category-header {
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid black;
+    padding-top: 1.5rem;
+}
+.category-description {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.carousel-container{
+ 
+    width: 100%;
+    overflow-x: scroll;
+
+}
