@@ -231,6 +231,20 @@ a.podcast-link:hover > div {
 .carousel-container{
  
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: none;
 
+}
+
+.previous, .next{
+  position: absolute;
+  bottom:-30;
+}
+
+.previous{
+  left:0;
+  transform: rotate(180deg)
+}
+
+.next{
+  right:0;
 }
