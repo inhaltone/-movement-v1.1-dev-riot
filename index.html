@@ -4,30 +4,32 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="author" content="GENDY">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!--Style CSS-->
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--Movement CSS files-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!--Movement Scripts-->
+    <script src="/js/headerFunctions.js"></script>
     <title>MOVEMENT V1.1</title>
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-main">
-        
-    
-          <a class="navbar-brand logo-module" href="#">
-            <img class="logo" src="img/logo/Movement-Logo.png"  class="d-inline-block align-bottom" alt="" loading="lazy">
-           
-            <span class="sub-logo"> CULTURE RADIO</span>
+ <!--MAIN NAV-->
+      <nav class="navbar navbar-expand-xl navbar-main">
+        <a class="navbar-brand logo-module bg-dark" href="#">
+          <img class="logo" src="img/logo/logo-1.png"  class="d-inline-block align-bottom" alt="" loading="lazy">
+            <span class="sub-logo d-none d-lg-inline-block"> CULTURE RADIO</span>
           </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
+
+            <div class="collapse navbar-collapse " id="navbarText">
+              <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">discover <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">discover </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">series</a>
@@ -44,29 +46,106 @@
               </ul>
              
             
-      
+            </div>
 
+            <form class="form-inline my-lg-0 mx-auto form-nav">
+              <input class="form-search mr-sm-0" type="search" placeholder="" aria-label="Search">
+              <button class="btn  my-sm-0" type="submit"><img class="menu-open" src="img/icons/search.png"></button>
+            </form>
       
-                <ul class="navbar-nav ml-md-auto navbar-expand-lg">
+                <ul class="nav ml-md-auto navbar-expand-lg">
                   
                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="img/icons/search.png"></a>
-                  </li>
-                  <li class="nav-item">
+                  
+                  <li class="nav-item d-none d-lg-block">
                     <a class="nav-link" href="#"><img src="img/icons/shop.png"></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="img/icons/burger.png"></a>
+                   
+                    <a id ="menuIcon" class="nav-link" data-toggle="collapse" href="#mega-menu-collapse" role="button" aria-expanded="false" aria-controls="mega-menu-collapse">
+                      <img class="menu-open" src="img/icons/burger.png">
+                      <img class="menu-close d-none" src="img/icons/close-white.png">
+                    </a>
                   </li>
                 </ul>
-
-              </div>
-
+   
             </nav>
-
-      <div class="container-fluid ">
-        <div class="row">
+       
+            <!--MOBILE MENU-->
+            <div class="collapse" id="mega-menu-collapse">
+              <div class="menu-container">
+              <div class="container-fluid menu-mobile-overflow">
+                <div class="row fade-in-bottom ">
+                  <div class="col-lg-1 responsive-menu d-none d-lg-block">
+                    <img class="logo-menu" src="img/logo/Movement-Logo-90.png">
+                  </div>
+                  <div class="col-lg-4 offset-lg-6 responsive-menu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">discover</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">series</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">collections</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">genres</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">residents</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">staff picks</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">latest</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">movement radio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">news & events</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">market</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                      </li>
+                  
+                    </ul>
+                    <ul class="nav justify-content-start responsive-menu-social">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">instagram</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">facebook</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">twitter</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">youtube</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--PLAYER START-->
+      <!--        <div class="row no-gutters">
           <div class="col-lg-12 bg-dark">
             <div class="player-1 d-flex flex-row align-items-center">
               <img class="player-button" src="img/icons/play-white.png">
@@ -74,6 +153,25 @@
             </div>
           </div>
         </div>
+      -->
+
+      <div class="row no-gutters">
+        <div class="col-lg-12 bg-light">
+          <div class="player-1 d-flex flex-row d-flex justify-content-between">
+            <div class="player-info">
+            <img class="player-button" src="img/icons/play.png">
+            <span class="d-none d-lg-inline-flex">Tune Now</span></div>
+            <div class="player-info">Xyn Cabal w/ Inhalt - The sounds of machines our parents used</div>
+            <div class="player-info">Athens 21:31:05 GMT +2</div>
+            
+          </div>
+        </div>
+      </div>
+     
+
+      <!--PLAYER END-->
+      <!--
+      <div class="container-fluid ">
         <div class="row ">
           <div class="col-lg-6 green-module">
             <nav class="navbar navbar-expand-lg ">
@@ -93,20 +191,23 @@
             </nav>
           </div>
         </div>
-        
       </div>
+      </div>
+   -->
     </header>
-
+ <!--
     <section class="index-section">
     <div class="container-fluid">
      
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-12">
+          <div class="row">
+        <div class="col-lg-2">
 <div class="category-header">Staff Picks</div>
 <div class="category-description">
   our handpicked selections of shows and podcasts that we believe that serve the purpose of the movement radio wordlwide</div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-9 offset-lg-1">
           <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="10000">
@@ -337,8 +438,10 @@
         </div>
       </div>
     </div>
+    </div>
+    </div>
   </section>
-   
+-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

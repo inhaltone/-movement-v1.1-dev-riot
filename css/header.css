@@ -1,0 +1,143 @@
+/********* LOGO **********/
+.logo{
+    width: 120px;
+  }
+.logo-module{
+    padding: .5rem 3rem .5rem 1rem;
+    margin-right:3rem;
+}
+.logo-menu {
+    max-width: 75px;
+  }
+span.sub-logo{
+    font-size:10px;
+    color:white;
+    vertical-align: revert;
+    line-height: 1;
+  }
+/********* LOGO END **********/
+
+/********* NAV MAIN START **********/
+.navbar-main{
+    background-color: var(--warp-purple);
+    color:white;
+  }
+  .navbar-nav > li > a {
+    color:white !important;
+    text-transform: uppercase;
+    margin-right:15px;
+    font-size:12px;
+  }
+  .navbar-nav > li:hover > a {
+    color:white !important;
+    text-transform: uppercase;
+    margin-right:15px;
+    font-size:12px;
+    text-decoration: underline;
+  }
+  .nav-link > img {
+    width:25px;
+  }
+  .navbar{
+    padding:0 !important;
+  }
+    /*** SEARCH FORM ***/
+    .btn{
+        width:25px;
+        padding:0 !important;
+      }
+      .btn.focus, .btn:focus {
+        outline: 0;
+        box-shadow: none !important;
+      }
+      .form-search {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff;
+        background-color: #fff0;
+        background-clip: padding-box;
+        border-bottom: 1px solid #ced4da;
+        border-radius: 0;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        display: inline-block;
+      width: auto;
+      }
+      .form-search:focus {
+        color: white;
+        background-color: transparent;
+        border-color: white;
+        outline: 0;
+        box-shadow: none;
+      }
+      
+      .form-nav{
+        
+        padding-right: 1rem;;
+      }
+    /*** SEARCH FORM ***/
+    /*** MENU MOBILE ***/
+    .menu-container{
+        height: 100vh;
+        background-color: var(--warp-purple);
+      
+      }
+      
+      .menu-mobile-overflow{
+        overflow-y: auto;
+        padding-bottom:50vh;
+        height: 100vh;
+      }
+      .responsive-menu{
+        margin-top:10vh;
+      }
+      .responsive-menu-social{
+        margin-top:6rem;
+      }
+      .responsive-menu > ul > li > a{
+        color: white !important;
+        text-transform: uppercase;
+        line-height: 1;
+      }
+      .responsive-menu > ul > li > a:hover{
+       text-decoration: underline;
+      }
+       /*** MENU MOBILE ***/
+/********* NAV MAIN END **********/
+@media (max-width: 576px) { 
+    .form-search {
+      
+        width: 65px;
+    }
+    .logo-module {
+       
+        margin-right: 0;
+        padding: .5rem 1rem .5rem 1rem;
+        width:50%;
+    }
+    .logo {
+        width: 120px;
+    }
+    .logo-menu {
+        max-width: 35px;
+      }
+      .form-nav{
+  
+        padding-right: 0;
+      }
+      .responsive-menu > ul > li > a{
+          font-size: 12px;
+          
+      }
+      .player-1{
+          font-size:10px;
+      }
+    
+ }
