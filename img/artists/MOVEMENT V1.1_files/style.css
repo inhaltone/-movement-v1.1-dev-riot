@@ -10,16 +10,6 @@ font-smoothing: antialiased;
 ::selection{
   background-color: var(--warp-purple);
 }
-.rave-bg{
-  background-color: var(--green-rave);
-}
-.warp-bg{
-  background-color: var(--warp-purple);
-}
-.black-bg{
-  background-color: black;
-  color:white;
-}
 body{
   font-family: 'Helvetica Neue', sans-serif !important;
 }

@@ -1,30 +1,70 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="GENDY">
    
     <!-- Bootstrap CSS -->
-    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="MOVEMENT%20V1.1_files/bootstrap.css" rel="stylesheet"><script>
+(() => {
+/**
+ * This script injected by the installed three.js developer
+ * tools extension.
+ * https://github.com/threejs/three-devtools
+ */
+
+const $devtoolsReady = Symbol('devtoolsReady');
+const $backlog = Symbol('backlog');
+
+// The __THREE_DEVTOOLS__ target is small and light-weight, and collects
+// events triggered until the devtools panel is ready, which is when
+// the events are flushed.
+const target = new class ThreeDevToolsTarget extends EventTarget {
+  constructor() {
+    super();
+    this[$devtoolsReady] = false;
+    this[$backlog] = [];
+    this.addEventListener('devtools-ready', e => {
+      this[$devtoolsReady] = true;
+      for (let event of this[$backlog]) {
+        this.dispatchEvent(event);
+      }
+    }, { once: true });
+  }
+
+  dispatchEvent(event) {
+    if (this[$devtoolsReady] || event.type === 'devtools-ready') {
+      super.dispatchEvent(event);
+    } else {
+      this[$backlog].push(event);
+    }
+  }
+}
+
+Object.defineProperty(window, '__THREE_DEVTOOLS__', {
+  value: target,
+});
+})();
+</script>
   
     
     <!--Movement CSS files-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="MOVEMENT%20V1.1_files/style.css">
+    <link rel="stylesheet" href="MOVEMENT%20V1.1_files/header.css">
+    <link rel="stylesheet" href="MOVEMENT%20V1.1_files/carousel.css">
+    <link rel="stylesheet" href="MOVEMENT%20V1.1_files/animations.css">
    
     
     <title>MOVEMENT V1.1</title>
-  </head>
+  </head><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style>
   <body>
     <header class="fixed-top">
  <!--MAIN NAV-->
       <nav class="navbar navbar-expand-xl navbar-main-white">
-        <a class="navbar-brand logo-module dark-mode" href="#">
-          <img class="logo" src="img/logo/logo-1.png"  class="d-inline-block align-bottom" alt="" loading="lazy">
+        <a class="navbar-brand logo-module bg-dark" href="#">
+          <img class="logo" src="MOVEMENT%20V1.1_files/logo-1.png" alt="" loading="lazy">
             <span class="sub-logo d-none d-lg-inline-block"> CULTURE RADIO</span>
           </a>
 
@@ -52,7 +92,7 @@
 
             <form class="form-inline my-lg-0 mx-auto form-nav">
               <input class="form-search mr-sm-0" type="search" placeholder="" aria-label="Search">
-              <button class="btn  my-sm-0" type="submit"><img class="menu-open" src="img/icons/header/search-black.png"></button>
+              <button class="btn  my-sm-0" type="submit"><img class="menu-open" src="MOVEMENT%20V1.1_files/search-black.png"></button>
             </form>
       
                 <ul class="nav ml-md-auto navbar-expand-lg">
@@ -60,13 +100,13 @@
                  
                   
                   <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link" href="#"><img src="img/icons/header/shop-black.png"></a>
+                    <a class="nav-link" href="#"><img src="MOVEMENT%20V1.1_files/shop-black.png"></a>
                   </li>
                   <li class="nav-item">
                    
-                    <a id ="menuIcon" class="nav-link" data-toggle="collapse" href="#mega-menu-collapse" role="button" aria-expanded="false" aria-controls="mega-menu-collapse">
-                      <img class="menu-open" src="img/icons/header/menu-black.png">
-                      <img class="menu-close d-none" src="img/icons/header/close-black.png">
+                    <a id="menuIcon" class="nav-link" data-toggle="collapse" href="#mega-menu-collapse" role="button" aria-expanded="false" aria-controls="mega-menu-collapse">
+                      <img class="menu-open" src="MOVEMENT%20V1.1_files/menu-black.png">
+                      <img class="menu-close d-none" src="MOVEMENT%20V1.1_files/close-black.png">
                     </a>
                   </li>
                 </ul>
@@ -79,7 +119,7 @@
               <div class="container-fluid menu-mobile-overflow">
                 <div class="row fade-in-bottom ">
                   <div class="col-lg-1 responsive-menu d-none d-lg-block">
-                    <img class="logo-menu" src="img/logo/Movement-Logo-90.png">
+                    <img class="logo-menu" src="MOVEMENT%20V1.1_files/Movement-Logo-90.png">
                   </div>
                   <div class="col-lg-4 offset-lg-6 responsive-menu">
                     <ul class="nav flex-column">
@@ -114,7 +154,7 @@
                         <a class="nav-link" href="#">movement radio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">news & events</a>
+                        <a class="nav-link" href="#">news &amp; events</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">market</a>
@@ -152,7 +192,7 @@
         <div class="col-lg-12 bg-light">
           <div class="player-1 d-flex flex-row d-flex justify-content-between">
             <div class="player-info">
-            <img class="player-button" src="img/icons/play.png">
+            <img class="player-button" src="MOVEMENT%20V1.1_files/play.png">
             <span class="d-none d-lg-inline-flex">Tune Now</span></div>
             <div class="player-info">Xyn Cabal w/ Inhalt - The sounds of machines our parents used</div>
             <div class="player-info">Athens 21:31:05 GMT +2</div>
@@ -167,61 +207,49 @@
 
     
       <div id="carouselMovement" class="carousel slide" data-ride="carousel">
-        
+        <ol class="carousel-indicators">
+          <li data-target="#carouselMovement" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselMovement" data-slide-to="1"></li>
+          <li data-target="#carouselMovement" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active"  style="background-image: url('img/carousel/slide-1.jpg')">
+          <div class="carousel-item active" style="background-image: url('img/carousel/slide-1.jpg')">
          
             <div class="carouselMovement-container">
             <div class="carouselMovement-caption">
-              <h3>First slide label</h3>
+              <h5>First slide label</h5>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
         </div>
            <div class="carousel-item " style="background-image: url('img/carousel/slide-2.jpg')">
            
-            
-            <div class="rave-bg carouselMovement-container-2 fade-in-top">
-              <div class="carouselMovement-caption-2 fade-in">
-                <h3>Midnight Fantasy Entertainment Presents: Night Nurse</h3><span>Athens - 30.08.20</span>
-                <p>Parental guidance required for the late night sounds of the Night Nurse - 80s softcore cassettes, erotic thriller soundtracks, slow jams, and other direct-to-video ephemera…</p>
-                <div class="d-flex flex-row bd-highlight mb-3">
-                  <div class="p-2 bd-highlight">techno</div>
-                  <div class="p-2 bd-highlight">leftfield</div>
-                  <div class="p-2 bd-highlight">grime</div>
-                </div>
-              </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-          
           </div>
           <div class="carousel-item " style="background-image: url('img/carousel/slide-3.jpg')">
             
-            <div class="black-bg carouselMovement-container-2 fade-in-top">
-              <div class="carouselMovement-caption-2 fade-in">
-                <h3>Midnight Fantasy Entertainment Presents: Night Nurse</h3><span>Athens - 30.08.20</span>
-                <p>Parental guidance required for the late night sounds of the Night Nurse - 80s softcore cassettes, erotic thriller soundtracks, slow jams, and other direct-to-video ephemera…</p>
-                <div class="d-flex flex-row bd-highlight mb-3">
-                  <div class="p-2 bd-highlight">techno</div>
-                  <div class="p-2 bd-highlight">leftfield</div>
-                  <div class="p-2 bd-highlight">grime</div>
-                </div>
-              </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </div>
           </div>
         </div>
         <a class="carousel-left" href="#carouselMovement" role="button" data-slide="prev">
-          <span  aria-hidden="true"><img class="img-fluid" src="img/icons/carousel/left-carousel.png"> </span>
+          <span aria-hidden="true"><img class="img-fluid" src="MOVEMENT%20V1.1_files/left-carousel.png"> </span>
          
         </a>
         <a class="carousel-right" href="#carouselMovement" role="button" data-slide="next">
-          <span  aria-hidden="true"><img class="img-fluid" src="img/icons/carousel/right-carousel.png"> </span>
+          <span aria-hidden="true"><img class="img-fluid" src="MOVEMENT%20V1.1_files/right-carousel.png"> </span>
          
         </a>
       </div>
       <div class="container-fluid">
       <div class="row no-gutters">
         <div class="col-lg-12">
-          <img class="img-fluid" src="img/artists/amnesia.jpg"/>
+          <img class="img-fluid" src="MOVEMENT%20V1.1_files/amnesia.jpg">
         </div>
       </div>
     </div>
@@ -500,11 +528,11 @@
 
    
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="assets/jquery/jquery-3.5.1.slim.min.js"></script>
-      <script src="assets/popperJS/popper.min.js" ></script>
-      <script src="assets/bootstrap/bootstrap.min.js" ></script>
+      <script src="MOVEMENT%20V1.1_files/jquery-3.js"></script>
+      <script src="MOVEMENT%20V1.1_files/popper.js"></script>
+      <script src="MOVEMENT%20V1.1_files/bootstrap.js"></script>
        <!--Movement Scripts-->
-     <script src="/js/headerFunctions.js"></script>
-      <script src="/js/carouselMovement.js"></script>
-  </body>
-</html>
+     <script src="MOVEMENT%20V1.1_files/headerFunctions.js"></script>
+      <script src="MOVEMENT%20V1.1_files/carouselMovement.js"></script>
+  <script src="MOVEMENT%20V1.1_files/livereload.js" async="" defer="defer"></script>
+</body></html>

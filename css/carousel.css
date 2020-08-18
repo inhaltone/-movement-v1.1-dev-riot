@@ -1,0 +1,55 @@
+/************** CAROUSEL *************/
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .carousel {
+   
+  }
+  .carouselMovement-container {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    text-align: center;
+    transform: translateX(-50%)translateY(-50%);
+    color: vblack;
+    background-color: var(--green-rave);
+    padding: 1rem;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+.carouselMovement-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+.carousel-left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-right {
+    position: absolute;
+    top: 50%;
+    right:0;
+    transform: translateY(-50%);
+}
+.carouselMovement-container-2 {
+    position: relative;
+    top: 103px;
+    width: 100vw;
+    height: auto;
+    
+    padding: .5rem 1rem .5rem 1rem;
+}
+.carouselMovement-container-2:hover{
+    background-color: var(--green-rave);
+}
+  
