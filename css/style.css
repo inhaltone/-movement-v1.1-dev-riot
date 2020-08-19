@@ -20,6 +20,10 @@ font-smoothing: antialiased;
   background-color: black;
   color:white;
 }
+.no-pad{
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
 body{
   font-family: 'Helvetica Neue', sans-serif !important;
 }
@@ -36,7 +40,34 @@ body{
     height:auto;
   }
  
-  
+  .right-arrow-owl {
+    position: absolute;
+    right: 10px;
+    background: black;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1030;
+padding: .5rem;
+}
+.left-arrow-owl {
+  position: absolute;
+  left: 10px;
+  background: black;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1030;
+padding: .5rem;
+}
+.left-arrow-owl > img{
+  width:30px;
+}
+.right-arrow-owl > img{
+  width:30px;
+}
  
   
 .player-module{
@@ -60,17 +91,18 @@ body{
   background-color: greenyellow;
 }
 .geo-tag{
-  padding-top: .5rem;
+  padding-top: 0 ;
   text-transform: uppercase;
   font-size: 12px;
-  padding-bottom:.5rem;
+  padding-bottom: 0;
   transition: all ease .2s;
 }
 .date-tag{
-  color:gray;
+  color:black;
   transition: all ease .2s;
  
-  font-size: 18px;
+  font-size: 12px;
+  margin-right:.5rem;
 }
 .artist-tag{
   text-transform: uppercase;
