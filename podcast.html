@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="GENDY">
+   
+    <!-- Bootstrap CSS -->
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+  
+    
+    <!--Movement CSS files-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!--JS PLugins-->
+
+     <!--RIOT COMPILER-->
+   <script src="components/header-nav.riot" type="riot"></script>
+   <script src="components/header-radio.riot" type="riot"></script>
+   
+   <script src="components/podcast-template.riot" type="riot"></script>
+   <script src="assets/riot/riot+compiler.min.js"></script>
+   
+    
+    <title>MOVEMENT V1.1 PODCAST PAGE</title>
+  </head>
+  <body>
+    <!--HEADER SECTION START => nav + player-->
+    <header class="fixed-top">
+      <!--HEADER-NAV => RIOT COMPONENT-->
+        <header-nav></header-nav>  
+        <header-radio></header-radio>
+    </header>
+  <!--HEADER SECTION END => nav + player-->
+
+  <div id="podcast-core">
+    <podcast-template></podcast-template>
+   
+    
+  </div>
+
+  <script>
+    riot.compile().then(() => {
+      riot.mount('header-nav')
+      riot.mount('header-radio')
+      riot.mount('podcast-template')
+     
+    })
+  </script>
+  
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/popperJS/popper.min.js" ></script>
+    <script src="assets/bootstrap/bootstrap.min.js" ></script>
+    <!--MouseWheel JS-->
+    <script src="assets/jquery/jquery.mousewheel.min.js"></script>
+     
+   
+    
+</body>
+</html>

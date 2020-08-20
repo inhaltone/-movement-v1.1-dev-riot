@@ -24,6 +24,10 @@ font-smoothing: antialiased;
   padding-left:0 !important;
   padding-right:0 !important;
 }
+.mt-white{
+border-top:1px solid white;
+}
+
 body{
   font-family: 'Helvetica Neue', sans-serif !important;
 }
@@ -48,7 +52,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 1030;
+    z-index: 1020;
 padding: .5rem;
 }
 .left-arrow-owl {
@@ -59,7 +63,7 @@ padding: .5rem;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  z-index: 1030;
+  z-index: 1020;
 padding: .5rem;
 }
 .left-arrow-owl > img{
@@ -267,6 +271,82 @@ width: 100%;
 padding-right: 15px;
 padding-left: 15px;
 }
+.bg-podcast{
+  height: 200vh;
+  min-height: 350px;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.location-date{
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  font-size: 12px;
+}
+.genres-list{
+  color:black;
+}
+.genres-list:hover{
+  color:black;
+}
+.info-podcast-container {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50vw;
+  transform: translateX(-50%);
+}
+
+.podcast-text{
+  color:white;
+  text-transform: uppercase;
+  font-size:11px;
+  margin-top:10px;
+}
+.share-button > a{
+  color:white;
+  font-size: 11px;
+}
+
+.podcast-head-container {
+  position: relative;
+  top: 103px;
+  width: 100%;
+  height: auto;
+  
+  padding: .5rem 1rem .5rem 1rem;
+}
+  .tracklist-container {
+    position: absolute;
+    top: 100%;
+    width: 50vw;
+    left: 50%;
+    tranform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.list-group{
+  border-radius:0 !important;
+}
+.artist-tracklist{
+  color:black;
+}
+.list-group-item > span{
+color:gray;
+font-size: 12px;
+}
+.movement-footer {
+  height: 20vh;
+  z-index: -1 !important;
 
 
-
+}
+div#movement-core{
+  margin-bottom:20vh;
+  background-color: white;
+}
+.footer-modules > div{
+  color:white;
+}
